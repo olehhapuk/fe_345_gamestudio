@@ -12,6 +12,7 @@ body {
 
 .container {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -37,6 +38,8 @@ body {
   background-image: url('./images/header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
   height: 400px;
   display: flex;
   align-items: center;
@@ -99,6 +102,7 @@ body {
   letter-spacing: 0.06em;
   color: #212121;
   margin-bottom: 4px;
+  transition: color 150ms;
 }
 
 .game__desc {
@@ -122,4 +126,142 @@ body {
   padding: 0 15px;
 }
 
+@media (min-width: 1440px) {
+  .games__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 45px;
+  }
+
+  .game {
+    margin-bottom: 0;
+  }
+
+  .game__img {
+    height: 294px;
+  }
+}
+
 /* /Games */
+
+/* Contact Us */
+
+.contact-us {
+  padding-bottom: 54px;
+}
+
+.form {
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+.form__field {
+  margin-bottom: 10px;
+}
+
+.form__label {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #212121;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form__input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+textarea.form__input {
+  font-family: inherit;
+  resize: none;
+}
+
+.form__submit {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  background-color: #2196f3;
+  padding: 10px 78px;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: #188ce8;
+}
+
+@media (min-width: 1440px) {
+  .contact-us {
+    padding-top: 54px;
+  }
+}
+
+/* /Contact Us */
+
+/* Foter */
+
+.footer {
+  text-align: center;
+  background-color: #2f303a;
+  padding: 60px 15px;
+}
+
+.footer .logo__inner {
+  color: #fff;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer__address {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+
+  margin-bottom: 8px;
+}
+
+.footer__email,
+.footer__phone {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__email {
+  margin-bottom: 8px;
+}
+
+/* /Foter */

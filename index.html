@@ -41,17 +41,74 @@
             </div>
           </a>
 
-          <a href="https://www.minecraft.net/en-us" target="_blank" class="game">
+          <a href="https://store.epicgames.com/ru/p/among-us" target="_blank" class="game">
             <img src="./images/among-us.jpg" alt="Among Us" class="game__img">
             <div class="game__info">
               <h3 class="game__title">Among Us</h3>
-              <p class="game__desc">Досліджуйте та будуйте безкінечні світи.</p>
+              <p class="game__desc">Готуйте свій космічний корабель до вильоту!</p>
+            </div>
+          </a>
+
+          <a href="https://www.origin.com/rus/ru-ru/store/need-for-speed/need-for-speed-payback" target="_blank"
+            class="game">
+            <img src="./images/nfs.jpeg" alt="NEED FOR SPEED" class="game__img">
+            <div class="game__info">
+              <h3 class="game__title">NEED FOR SPEED</h3>
+              <p class="game__desc">Тюнінгуй авто і змагайся за призи у гонках.</p>
+            </div>
+          </a>
+
+          <a href="https://worldoftanks.ru/" target="_blank" class="game">
+            <img src="./images/wot.jpg" alt="World of Tanks" class="game__img">
+            <div class="game__info">
+              <h3 class="game__title">World of Tanks</h3>
+              <p class="game__desc">Занурся в атмосферу воєнних поєдинків.</p>
             </div>
           </a>
 
         </div>
       </section>
+
+      <section class="contact-us">
+        <h2 class="section-title">Зв'яжіться з нами</h2>
+
+        <form class="form" action="/" method="post">
+
+          <div class="form__field">
+            <label for="name" class="form__label">Ім'я</label>
+            <input type="text" class="form__input" id="name" name="name" autocomplete="off" required>
+          </div>
+
+          <div class="form__field">
+            <label for="phone" class="form__label">Номер телефона</label>
+            <input type="tel" class="form__input" id="phone" name="phone" autocomplete="off" required>
+          </div>
+
+          <div class="form__field">
+            <label for="email" class="form__label">E-mail</label>
+            <input type="email" class="form__input" id="email" autocomplete="off" required>
+          </div>
+
+          <div class="form__field">
+            <label for="comment" class="form__label">Коментарій</label>
+            <textarea class="form__input" id="comment" autocomplete="off" placeholder="Напишіть свій коментарій"
+              rows="5"></textarea>
+          </div>
+
+          <button class="form__submit" type="submit">Надіслати</button>
+
+        </form>
+      </section>
     </main>
+
+    <footer class="footer">
+      <a href="/" class="logo">
+        Game<span class="logo__inner">Studio</span>
+      </a>
+      <p class="footer__address">м. Київ, проспект Лесі Українки, 26</p>
+      <p class="footer__email">info@example.com</p>
+      <p class="footer__phone">+38 099 111 11 11</p>
+    </footer>
 
   </div>
 </body>
